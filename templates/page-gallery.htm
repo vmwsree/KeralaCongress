@@ -1,0 +1,55 @@
+{% extends "headder.html" %}
+{% load static %}
+{% block content %}
+<!-- End: Header -->
+		<!-- Start: Main -->
+		<main id="main">
+			<div class="page-header wow animated fadeInDown" data-wow-duration="0.5s">
+				<div class="q-container">
+					<div class="q-row">
+						<div class="q-col-1-1"><h1 class="section-headline"><span>Media Center</span> Media Gallery</h1></div>
+					</div>
+				</div>
+			</div>
+			<div class="page-body">
+				<div class="q-container">
+					<div class="q-row">
+						<div class="content q-col-1-1 wow animated fadeIn" data-wow-delay="0.2s" data-wow-duration="0.5s">
+							<section class="section">
+
+
+								<div class="gallery ">
+
+
+									<div class="gallery-items">
+                                        {% for img in  images %}
+										<div class="gallery-item gal-family">
+											<div class="gallery-thumb">
+												<img src="{{ img.image.url }}" alt="">
+												<div class="gallery-overlay">
+													<h4>{{ img.title }}</h4>
+													<div class="gallery-buttons">
+														<a href="{{ img.image.url }}" title="{{ img.title }}" class="button zoom"><i class="fa fa-arrows-alt"></i></a>
+
+													</div>
+												</div>
+											</div>
+											<ul class="gallery-photos">
+												<li><a href="{{ img.image.url }}" title="{{ img.title }}" class="zoom"></a></li>
+
+											</ul>
+										</div>
+                                        {% endfor %}
+									</div>
+								</div>
+
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- End: Main -->
+
+
+{% endblock %}

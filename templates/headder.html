@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--
+NOTICE:
+-->
+
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<!-- Loading: Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+
+		<title> </title>
+
+		<!-- Loading: Normalize, Grid -->
+		<link rel="stylesheet" href="{% static "assets/css/normalize.css" %}" media="screen">
+		<link rel="stylesheet" href="{% static "assets/css/grid.css" %}" media="screen">
+
+		<!-- Loading: Extra Stylesheets -->
+		<link rel="stylesheet" href="{% static "assets/css/animate.min.css" media="screen">
+
+		<link rel="stylesheet" href="{% static "assets/js/plugins/owl-carousel/owl.carousel.css" %}" media="screen">
+		<link rel="stylesheet" href="{% static "assets/js/plugins/owl-carousel/owl.theme.css" %}" media="screen">
+		<link rel="stylesheet" href="{% static "assets/js/plugins/owl-carousel/owl.transitions.css" %}" media="screen">
+
+		<link rel="stylesheet" href="{% static "assets/js/plugins/easy-responsive-tabs/easyresponsivetabs.css" %}" media="screen">
+
+		<link rel="stylesheet" href="{% static "assets/js/plugins/magnific-popup/jquery.magnific-popup.css" %}" media="screen">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+		<!-- Loading: Styles -->
+		<!--<link rel="stylesheet/less" href="{% static "assets/less/style.less" %}" media="screen">-->
+		<link rel="stylesheet" href="{% static "assets/css/style.css" %}" media="screen">
+
+		<!-- Loading Modenizr -->
+		<script src="{% static "assets/js/modernizr.min.js" %}"></script>
+
+		<!--[if lt IE 9]>
+		<script src="{% static "assets/js/html5.min.js" %}"></script>
+		<script src="{% static "assets/js/respond.js" %}"></script>
+		<![endif]-->
+	</head>
+
+	<body class="home">
+
+		<!-- Start: Header -->
+		<header id="header">
+			<div class="q-container"">
+				<div id="logo">
+					<a href="index.htm"><img src="{% static "assets/img/logo.png" %}" style="width:118px;height:50px" alt=""></a>
+				</div>
+
+				<nav id="nav">
+					<a href="index_4.htm#" id="nav-toggle" title="Navigation"><i class="fa fa-bars"></i></a>
+					<ul>
+						<li>
+							<a href="index.htm">Home <span>Welcome</span></a>
+							
+						</li>
+						<li>
+							<a href="page-sidebar.htm">About  <span>Mission, Vision, Results</span></a>
+							<ul>
+								<li><a href="page-sidebar.htm">Kerala Congress's Story</a></li>
+								<li><a href="page-wide.htm">Kerala Congress's Vision</a>
+									
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<a href="page-blog.htm">Media <span>Up to date</span></a>
+							<ul>
+								<li><a href="page-blog.htm">News</a></li>
+								<li><a href="page-blog.htm">Kerala Congress's Blog</a></li>
+								<li>
+									<a href="page-gallery.htm">Gallery</a>
+									
+								</li>
+							</ul>
+						</li>
+						<li><a href="page-roadmap.htm">കേരള യാത്ര <span>Roadmap</span></a></li>
+						<li class="nav-special nav-reverse">
+							<a href="page-donate.htm">Membership <span>Donate &amp; Membership</span></a>
+							
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+{% block content %}
+
+{% endblock %}
+
+		<!-- Start: Footer -->
+		<footer id="footer">
+			<div class="q-container">
+				<div class="q-row">
+					<div class="q-col-2-3">
+						<nav id="nav-footer-primary">
+							<ul>
+								<li><a href="index.htm">Home</a></li>
+								<li><a href="page-sidebar.htm">About Kerala Congress</a></li>
+								<li><a href="page-roadmap.htm">Roadmap</a></li>
+								<li><a href="page-blog.htm">Media</a></li>
+							</ul>
+						</nav>
+						<nav id="nav-footer-secondary">
+							<ul>
+								<li><a href="page-contact.htm">Contact</a></li>
+								<li><a href="page-features.htm">Terms &amp; Conditions</a></li>
+								<li><a href="page-features.htm">Privacy Policy</a></li>
+							</ul>
+						</nav>
+						<p class="footer-info">Creative Commons By The Kerala Congress</p>
+					</div>
+					<div class="q-col-1-3">
+						<a href="index_4.htm#" class="footer-logo"></a>
+
+						<ul class="social-profiles">
+							<li><a href="index_4.htm#" class="social-button social-facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="index_4.htm#" class="social-button social-twitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<!--
+							<li><a href="#" class="social-button social-google" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#" class="social-button social-foursquare" title="Foursquare"><i class="fa fa-foursquare"></i></a></li>
+							<li><a href="#" class="social-button social-linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="social-button social-pinterest" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#" class="social-button social-instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="social-button social-flickr" title="Flickr"><i class="fa fa-flickr"></i></a></li>
+							<li><a href="#" class="social-button social-youtube" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+							<li><a href="#" class="social-button social-vimeo" title="Vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+							-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End: Footer -->
+
+		<!-- Loading: jQuery and jQUery UI-->
+		<script src="{% static "assets/js/jquery-1.11.1.min.js" %}"></script>
+		<script src="{% static "assets/js/jquery-migrate-1.2.1.min.js" %}"></script>
+		<Script src="{% static "assets/js/jquery-ui.min.js" %}"></script>
+
+		<!-- Loading: Google Maps API-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVILsE_q8MXQDljo45Cy2nUjb3LPuja_c"></script>
+
+		<!-- Loading: Additional Scripts and Plugins -->
+		<script src="{% static "assets/js/less-1.7.3.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.hoverintent.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.superfish.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/owl-carousel/owl.carousel.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/easy-responsive-tabs/easyresponsivetabs.js" %}"></script>
+		<script src="{% static "assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.mixitup.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.fitvids.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.mousewheel.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/jquery.simplr.smoothscroll.min.js" %}"></script>
+		<script src="{% static "assets/js/plugins/wow.min.js" %}"></script>
+
+		<!-- Loading: Forms and Form Validation -->
+		<script src="{% static "assets/js/plugins/jquery.form.min.js"  %}"type="text/javascript"></script>
+		<script src="{% static "assets/js/plugins/jquery.validate.min.js" %}" type="text/javascript"></script>
+		<script src="{% static "assets/js/custom.validation.js" %}" type="text/javascript"></script>
+
+		<!-- Loading: Custom Scripts -->
+		<script src="{% static "assets/js/custom.electoral_2.js" %}"></script>
+
+		<!-- Start: StatCounter Code -->
+		<script type="text/javascript">
+		var sc_project=4147920; 
+		var sc_invisible=1; 
+		var sc_partition=51; 
+		var sc_click_stat=1; 
+		var sc_security="40840811"; 
+		</script>
+
+		<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a title="web stats" class="statcounter" href="http://www.statcounter.com/free_web_stats.html"><img class="statcounter" src="http://c.statcounter.com/4147920/0/40840811/1/" alt="web stats" /></a></div></noscript>
+		<!-- End: StatCounter Code -->
+	</body>
+</html>
